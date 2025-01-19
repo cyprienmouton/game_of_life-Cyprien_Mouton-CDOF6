@@ -8,8 +8,9 @@ Created on Mon Jan 13 15:42:17 2025
 import time
 import os
 
-def print_grid(grid):
+def print_grid(grid, generation):
     os.system('cls' if os.name == 'nt' else 'clear')
+    print(f"Generation: {generation}")
     for row in grid:
         print(''.join(row))
     print()
@@ -38,7 +39,9 @@ if __name__ == "__main__":
         [' ', '#', ' '],
         ['#', '#', '#']
     ]
+    generation = 0  # Compteur de générations
     while True:
-        print_grid(grid)
+        print_grid(grid, generation)
         grid = next_generation(grid)
+        generation += 1
         time.sleep(1)
