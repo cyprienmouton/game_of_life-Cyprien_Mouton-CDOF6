@@ -54,6 +54,15 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 Contributions are welcome! Feel free to open an issue or submit a pull request with improvements or bug fixes.
 
+## Contributor
+
+Elouan Quiniou
+
+## Update
+
+Generation Counter
+The simulation now displays a generation counter at the top of the grid. This counter increments with each new generation, allowing users to track the progression of the simulation over time.
+
 ## Author
 
 Cyprien Mouton
