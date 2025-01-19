@@ -8,6 +8,7 @@ Created on Mon Jan 13 15:42:17 2025
 import time
 import os
 
+# Displays the grid along with the current generation number.
 def print_grid(grid, generation):
     os.system('cls' if os.name == 'nt' else 'clear')
     print(f"Generation: {generation}")
@@ -15,6 +16,7 @@ def print_grid(grid, generation):
         print(''.join(row))
     print()
 
+# Computes the next generation of the grid based on Conway's Game of Life rules.
 def next_generation(grid):
     rows, cols = len(grid), len(grid[0])
     new_grid = [[' ' for _ in range(cols)] for _ in range(rows)]
